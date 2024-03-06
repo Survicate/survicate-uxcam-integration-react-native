@@ -1,0 +1,131 @@
+{
+  "name": "@survicate/survicate-uxcam-integration-react-native",
+  "title": "Survicate UXCam Integration for React Native",
+  "version": "1.0.0",
+  "description": "A thin library designed for seamless integration between Survicate and UXCam on React Native. It automatically sends survey answers coming from Survicate SDK as UXCam events that can be previewed directly in the UXCam panel.",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "*.podspec",
+    "DEPENDENCIES",
+    "!lib/typescript/example",
+    "!ios/build",
+    "!android/build",
+    "!android/gradle",
+    "!android/gradlew",
+    "!android/gradlew.bat",
+    "!android/local.properties",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "prepack": "bob build",
+    "example": "yarn --cwd example",
+    "bootstrap": "yarn example && yarn install && yarn example pods"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "repository": "https://github.com/Survicate/survicate-uxcam-integration-react-native",
+  "author": "Survicate <hello@survicate.com> (https://survicate.com/)",
+  "license": "BSD 3-Clause",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://survicate.com"
+  },
+  "homepage": "https://github.com/Survicate/survicate-uxcam-integration-react-native#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.0.2",
+    "@survicate/react-native-survicate": "^4.1.0",
+    "@types/jest": "^28.1.2",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.0.5",
+    "react-native": "^0.73.5",
+    "react-native-builder-bob": "^0.23.2",
+    "react-native-ux-cam": "^5.4.14",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "@survicate/react-native-survicate": ">=4.1.1",
+    "react-native": ">=0.60.0",
+    "react-native-ux-cam": ">=5.0.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules",
+      "<rootDir>/lib/"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "codegenConfig": {
+    "name": "RNSurvicateUxcamIntegrationReactNativeSpec",
+    "type": "modules",
+    "jsSrcsDir": "src"
+  }
+}
