@@ -1,7 +1,7 @@
 {
   "name": "@survicate/survicate-uxcam-integration-react-native",
   "title": "Survicate UXCam Integration for React Native",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A thin library designed for seamless integration between Survicate and UXCam on React Native. It automatically sends survey answers coming from Survicate SDK as UXCam events that can be previewed directly in the UXCam panel.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.0.2",
-    "@survicate/react-native-survicate": "^4.1.0",
+    "@survicate/react-native-survicate": "^5.1.0",
     "@types/jest": "^28.1.2",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
@@ -68,7 +68,7 @@
     "typescript": "^5.0.2"
   },
   "peerDependencies": {
-    "@survicate/react-native-survicate": ">=4.1.1",
+    "@survicate/react-native-survicate": ">=5.1.0",
     "react-native": ">=0.60.0",
     "react-native-ux-cam": ">=5.0.0"
   },
