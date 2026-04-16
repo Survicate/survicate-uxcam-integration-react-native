@@ -1,0 +1,49 @@
+name: Publish Survicate UXCam Integration React Native to npm
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Perform a dry run (no actual publish)'
+        required: true
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: >-
+      github.ref == 'refs/heads/main' ||
+      startsWith(github.ref, 'refs/heads/release/')
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js with npm registry for OIDC
+        uses: actions/setup-node@v6
+        with:
+          # Pinned to 22.22.1 — Node 22.22.2 ships a broken npm bundle
+          # (missing promise-retry). See: https://github.com/nodejs/node/issues/62430
+          node-version: '22.22.1'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Upgrade npm for trusted publishing support
+        run: npm install -g npm@latest
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Build package
+        run: npm run build
+
+      - name: Publish (dry run)
+        if: inputs.dry_run == true
+        run: npm publish --access public --provenance --dry-run
+
+      - name: Publish to npm
+        if: inputs.dry_run != true
+        run: npm publish --access public --provenance
