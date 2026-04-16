@@ -32,13 +32,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Upgrade npm for trusted publishing support
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
 
       - name: Install dependencies
         run: yarn --frozen-lockfile
-
-      - name: Build package
-        run: npm run build
 
       - name: Publish (dry run)
         if: inputs.dry_run == true
