@@ -9,7 +9,7 @@
     "pods": "pod-install --quiet"
   },
   "dependencies": {
-    "@survicate/react-native-survicate": "^7.0.0",
+    "@survicate/react-native-survicate": "^8.0.0",
     "react": "19.2.4",
     "react-native": "0.83.4",
     "react-native-ux-cam": "^6.0.14"
