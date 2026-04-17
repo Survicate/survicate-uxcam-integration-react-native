@@ -976,7 +976,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.27.1"
     "@babel/plugin-transform-typescript" "^7.28.5"
 
-"@babel/runtime@^7.25.0":
+"@babel/runtime@^7.20.0", "@babel/runtime@^7.25.0":
   version "7.29.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.29.2.tgz#9a6e2d05f4b6692e1801cd4fb176ad823930ed5e"
   integrity sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==
@@ -1591,10 +1591,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@survicate/react-native-survicate@^7.0.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-7.3.0.tgz#c9f585d028fe3488c73d6a90b6c4a2102d4ed5cc"
-  integrity sha512-azSWKvKjTY23Fr7AAkjGx6eznoniO9fRAS6IIMYMxdcz+hW7eL0FVzukF9HkabhPp/WZi/CfzqJtXbZv7eKKNg==
+"@survicate/react-native-survicate@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-8.0.0.tgz#f1b8d2925417afbf1879f6fa67b1a247f821b38a"
+  integrity sha512-GjuI5yqfo1+nZ1gGs7D5OHcEo+qa0gK29CQp5ROpLM+Ps1aEtQVJykK+kjhwir+nZX3NHdTK/NRevkBVXFpzOg==
 
 "@types/babel__core@^7.1.14":
   version "7.20.5"
@@ -5240,10 +5240,12 @@ react-native-monorepo-config@^0.3.3:
     escape-string-regexp "^5.0.0"
     fast-glob "^3.3.3"
 
-react-native-ux-cam@^5.4.14:
-  version "5.4.16"
-  resolved "https://registry.yarnpkg.com/react-native-ux-cam/-/react-native-ux-cam-5.4.16.tgz#f2c21821320147cf3c1c2a734ae56a2adad5623f"
-  integrity sha512-vmad2I9aiW+0o+0zwDd36a4XBfEQeqNsC1MtjT02b+AkQ/bp7PPovr4OZG1eAi3v64jAdc3Fgny0vDAt99yiMw==
+react-native-ux-cam@^6.0.15:
+  version "6.0.15"
+  resolved "https://registry.yarnpkg.com/react-native-ux-cam/-/react-native-ux-cam-6.0.15.tgz#6024f6ea8b8ba44ac4cf3ab60c22a4e5755fb595"
+  integrity sha512-4s9hoGSuLPxidYZdFYnCAwta0wRkod53/B45J66nxi5I1yVKt+3YlLGxc9G+yqlFCJPeYAToypoP19Cp44WMgw==
+  dependencies:
+    "@babel/runtime" "^7.20.0"
 
 react-native@0.83.4:
   version "0.83.4"
