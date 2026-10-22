@@ -112,7 +112,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation "com.survicate:survicate-sdk:8.0.0"
+  implementation "com.survicate:survicate-sdk:9.0.1"
   implementation "com.uxcam:uxcam:3.9.1"
 }
 

@@ -1591,10 +1591,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@survicate/react-native-survicate@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-8.0.0.tgz#f1b8d2925417afbf1879f6fa67b1a247f821b38a"
-  integrity sha512-GjuI5yqfo1+nZ1gGs7D5OHcEo+qa0gK29CQp5ROpLM+Ps1aEtQVJykK+kjhwir+nZX3NHdTK/NRevkBVXFpzOg==
+"@survicate/react-native-survicate@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@survicate/react-native-survicate/-/react-native-survicate-9.0.0.tgz#94b4f0510af0f7ba1f06c45f41b97f54a116722e"
+  integrity sha512-o415x6FPCJnrhqVu+TLuQq4+5y2MKDaSfmo06YXmyjnJTL8yPMzZHquJ78VLePC5fkpHGm+f2nuKbhEVv7GnTg==
 
 "@types/babel__core@^7.1.14":
   version "7.20.5"
