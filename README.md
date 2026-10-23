@@ -3,8 +3,6 @@ A thin library designed for seamless integration between [Survicate](https://sur
 
 ## Installation
 
-Version 1.4.0 requires `@survicate/react-native-survicate` 9.x. Use version 1.3.0 of this integration with Survicate SDK 8.x.
-
 You'll need to install integration using your preferred package manager:
 
 ### NPM
