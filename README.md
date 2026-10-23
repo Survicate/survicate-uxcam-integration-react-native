@@ -2,6 +2,7 @@
 A thin library designed for seamless integration between [Survicate](https://survicate.com/) and [UXCam](https://uxcam.com/) on React Native. It automatically sends survey answers coming from Survicate SDK as UXCam events that can be previewed directly in the UXCam panel.
 
 ## Installation
+
 You'll need to install integration using your preferred package manager:
 
 ### NPM
