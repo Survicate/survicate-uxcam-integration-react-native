@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "14.0" }
+  s.platforms    = { :ios => "15.0" }
   s.source       = { :git => "https://github.com/Survicate/survicate-uxcam-integration-react-native.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
